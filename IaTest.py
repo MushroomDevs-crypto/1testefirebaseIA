@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import firebase_admin
 from firebase_admin import credentials, db
 
-# Carrega variáveis de ambiente
+# Carrega variáveis de ambiente e
 load_dotenv()
 
 # Credenciais da API do X (Twitter)
