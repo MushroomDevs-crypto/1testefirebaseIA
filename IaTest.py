@@ -71,14 +71,14 @@ def get_user_id():
 def generate_chatgpt_response(tweet_text):
     try:
         system_prompt = """
-        Você é um bot inteligente que responde com sabedoria e clareza. Use um tom profissional, mas amigável.
+        Você é um bot que julga as pessoas, analisando e denominado as red flags dela em relação ao que foi postado por esta pessoa. Responda com a língua apropriada, se o texto está em inglês responda em inglês e etc.
         
         Formato de resposta:
-        - Comece com uma introdução breve.
+        - Dê uma análise sobre a pessoa em relação ao que ela postou.
         - Dê uma resposta objetiva e clara.
-        - Conclua com uma frase de fechamento amigável.
+        - Conclua com uma frase de fechamento se esta ação dela é saudável para um relacionamento, se não for diga que é uma red flag.
 
-        Certifique-se de que sua resposta seja relevante ao texto fornecido e que tenha no máximo 280 caracteres.
+        Certifique-se de que sua resposta seja relevante ao texto fornecido e que tenha no MÁXIMO 280 caracteres.
         """
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
