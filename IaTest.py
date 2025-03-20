@@ -61,7 +61,7 @@ client = tweepy.Client(
 # Função para obter o ID do usuário autenticado
 def get_user_id():
     try:
-        user = client.get_user(username="redflagaisol")  # Substitua pelo nome de usuário do bot
+        user = client.get_user(username="redflagaibsc")  # Substitua pelo nome de usuário do bot
         return user.data.id
     except Exception as e:
         print(f"Erro ao obter ID do usuário: {e}")
